@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>{{id}}</h1>
+        <p>{{body}}</p>
+    </div>
+
+    <script>
+    window.dataLayer = window.dataLayer || []
+        window.dataLayer.push({
+            event: 'virtualPageview',
+            pagePath: document.location.pathname
+        })
+    </script>
+{% endblock %}
